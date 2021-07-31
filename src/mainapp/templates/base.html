@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Robot" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+
+<body>
+    <div class="page_container">
+        <ul class="topnav">
+            <li><a href="#">Royal Hotels</a></li>
+            <li><a href="#">See Our Menu</a></li>
+            <li><a href="#">Admin Panel</a></li>
+        </ul>
+        <header class="header-title">
+            <h1>{% block header %}{% endblock %}</h1>
+        </header>
+        <div>
+            {% block content %}{% endblock %}
+        </div>
+    </div>
+
+
+
+    <section class="block-footer">
+        <p id="footer-right"><a href="#">terms</a><a href="#">Privacy</a></p>
+        <p id="footer-left">&copy;2018 - The Fictional, Royal Hotels</p>
+    </section>
+
+</body>
+
+</html>
